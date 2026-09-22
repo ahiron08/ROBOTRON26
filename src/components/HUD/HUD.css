@@ -1,0 +1,141 @@
+@import '../../styles/tokens.css';
+
+/* ============================================================
+   HUD — decorative sci-fi UI details
+   ============================================================ */
+.hud {
+  position: absolute;
+  inset: 0;
+  z-index: 700;
+  pointer-events: none;
+}
+
+.hud-el {
+  position: absolute;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  color: var(--text-dim);
+  opacity: 0.82;
+}
+.hud-el b {
+  color: var(--text-soft);
+  font-weight: 500;
+}
+.hud-el em {
+  color: var(--accent-3);
+  font-style: normal;
+  font-size: 0.56rem;
+}
+
+.hud--tl {
+  left: var(--gutter);
+  top: calc(var(--nav-h) + 26px);
+}
+.hud--tr {
+  right: var(--gutter);
+  top: calc(var(--nav-h) + 26px);
+}
+.hud--bl {
+  left: var(--gutter);
+  bottom: 30px;
+}
+.hud--br {
+  right: var(--gutter);
+  bottom: 30px;
+  writing-mode: vertical-rl;
+}
+
+.hud-coords span {
+  color: var(--text-soft);
+  font-size: 0.6rem;
+}
+
+.hud-stream i {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-right: 6px;
+  border: 1px solid var(--accent-3);
+  background: rgba(34, 211, 238, 0.25);
+}
+
+/* Corner brackets */
+.hud-corner {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  box-sizing: border-box;
+  border: 1px solid var(--line-strong);
+  opacity: 0.7;
+}
+.hud--c1 { left: 14px; top: 14px; border-right: none; border-bottom: none; }
+.hud--c2 { right: 14px; top: 14px; border-left: none; border-bottom: none; }
+.hud--c3 { left: 14px; bottom: 14px; border-right: none; border-top: none; }
+.hud--c4 { right: 14px; bottom: 14px; border-left: none; border-top: none; }
+
+/* Scanning line */
+.hud-scan {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.4), transparent);
+  opacity: 0.5;
+  animation: hud-scan-line 9s linear infinite;
+}
+@keyframes hud-scan-line {
+  0% { top: 8%; }
+  50% { top: 55%; }
+  100% { top: 8%; }
+}
+
+/* Crosshair marker */
+.hud-marker {
+  position: absolute;
+  left: 47%;
+  top: 62%;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(173, 178, 255, 0.5);
+}
+.hud-marker::before,
+.hud-marker::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 40px;
+  height: 1px;
+  background: var(--accent);
+  transform-origin: center;
+}
+.hud-marker::before { transform: rotate(0deg); }
+.hud-marker::after { transform: rotate(90deg); }
+.hud-marker-ring {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 13px;
+  height: 13px;
+  margin: -7px;
+  border-radius: 50%;
+  border: 1px solid var(--accent-3);
+}
+
+@media (max-width: 768px) {
+  .hud-corner,
+  .hud-scan,
+  .hud-marker,
+  .hud--br {
+    display: none;
+  }
+  .hud--tl { top: calc(var(--nav-h) + 18px); }
+  .hud--bl,
+  .hud--br {
+    bottom: 20px;
+  }
+}

@@ -1,0 +1,43 @@
+Forced re-optimization of dependencies
+
+  [32m[1mVITE[22m v5.4.21[39m  [2mready in [0m[1m476[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5215[22m/[39m
+[2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[2m3:25:14 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.jsx[22m
+[2m3:25:37 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.jsx[22m
+[2m3:25:56 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.jsx[22m
+[2m3:26:13 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.jsx[22m
+[2m3:26:33 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.jsx[22m
+[2m3:27:09 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.jsx[22m
+[2m3:27:15 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.jsx[22m
+[2m3:27:39 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.jsx[22m
+[2m3:28:42 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.jsx[22m
+[2m3:32:38 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.css[22m
+[2m3:32:53 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.css[22m
+[2m3:36:51 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.jsx[22m
+[2m3:36:56 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.jsx[22m
+[2m3:43:28 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.jsx[22m
+[2m3:44:20 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.jsx[22m
+[2m4:07:51 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.css[22m
+[2m4:07:59 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.css[22m
+[2m4:09:25 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.css[22m
+[2m4:09:41 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.css[22m
+[2m4:09:42 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.css[22m
+[2m4:12:17 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.css[22m
+[2m4:12:27 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.css[22m
+[2m4:12:38 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.css[22m
+[2m4:12:50 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.css[22m
+[2m4:13:35 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.css[22m
+[2m4:13:46 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.css[22m
+[2m4:13:56 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.css[22m
+[2m4:14:07 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.css[22m
+[2m4:14:44 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.css[22m
+[2m4:14:52 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.css[22m
+[2m4:15:12 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.css[22m
+[2m4:16:14 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.css[22m
+[2m4:16:32 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.css[22m
+[2m4:16:52 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.css[22m
+[2m4:17:10 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.css[22m
+[2m4:18:04 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.css[22m
+[2m4:18:19 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero/Hero.css[22m

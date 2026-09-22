@@ -1,0 +1,8 @@
+[2m4:14:52 AM[22m [31m[1m[vite][22m[39m [31mInternal server error: EBUSY: resource busy or locked, open 'C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\src\components\Hero\Hero.css'[39m
+      at async open (node:internal/fs/promises:640:25)
+      at async Object.readFile (node:internal/fs/promises:1283:14)
+      at async loadAndTransform (file:///C:/Users/qwere/OneDrive/%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/robotron-2026/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51925:16)
+[2m4:14:52 AM[22m [31m[1m[vite][22m[39m [31mInternal server error: EBUSY: resource busy or locked, open 'C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\src\components\Hero\Hero.css'[39m
+      at async open (node:internal/fs/promises:640:25)
+      at async Object.readFile (node:internal/fs/promises:1283:14)
+      at async loadAndTransform (file:///C:/Users/qwere/OneDrive/%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/robotron-2026/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51925:16)

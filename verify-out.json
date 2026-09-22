@@ -1,0 +1,57 @@
+[
+  {
+    "viewport": "1920x1080",
+    "fontSize": "271.4px",
+    "fitVar": "271.40px",
+    "wordW": 1758,
+    "wordH": 228,
+    "wordFitsX": true,
+    "lockupTop": 102,
+    "lockupBottom": 1032,
+    "lockupFitsY": true
+  },
+  {
+    "viewport": "1920x700",
+    "fontSize": "322px",
+    "fitVar": "424.06px",
+    "wordW": 1335,
+    "wordH": 173,
+    "wordFitsX": true,
+    "lockupTop": -82,
+    "lockupBottom": 817,
+    "lockupFitsY": false
+  },
+  {
+    "viewport": "1440x900",
+    "fontSize": "231.09px",
+    "fitVar": "231.09px",
+    "wordW": 1287,
+    "wordH": 167,
+    "wordFitsX": true,
+    "lockupTop": 56,
+    "lockupBottom": 889,
+    "lockupFitsY": true
+  },
+  {
+    "viewport": "1024x600",
+    "fontSize": "259.86px",
+    "fitVar": "259.86px",
+    "wordW": 909,
+    "wordH": 118,
+    "wordFitsX": true,
+    "lockupTop": -55,
+    "lockupBottom": 655,
+    "lockupFitsY": false
+  },
+  {
+    "viewport": "390x844",
+    "fontSize": "58.96px",
+    "fitVar": "58.96px",
+    "wordW": 328,
+    "wordH": 43,
+    "wordFitsX": true,
+    "lockupTop": 253,
+    "lockupBottom": 591,
+    "lockupFitsY": true
+  }
+]
