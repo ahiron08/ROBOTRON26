@@ -6,3 +6,137 @@
       at async open (node:internal/fs/promises:640:25)
       at async Object.readFile (node:internal/fs/promises:1283:14)
       at async loadAndTransform (file:///C:/Users/qwere/OneDrive/%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/robotron-2026/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51925:16)
+[2m4:31:08 AM[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\src\components\Hero\Hero.jsx: Unexpected token, expected "," (224:84)
+
+[0m [90m 222 |[31m [90m         remount), GSAP records the transitioning value (~0) as the END state[31m
+ [90m 223 |[31m [90m         and the element never becomes visible. Explicit from→to is immune. */[31m
+[31m[1m>[22m[31m[90m 224 |[31m       [33m.[31mfromTo([32m'.scroll-ind'[31m[33m,[31m { opacity[33m:[31m [35m0[31m }[33m,[31m { opacity[33m:[31m [35m1[31m[33m,[31m duration[33m:[31m [35m0.6[31m }[33m,[31m [32m'-=0.4'[31m)[33m;[31m
+ [90m     |[31m                                                                                     [31m[1m^[22m[31m
+ [90m 225 |[31m
+ [90m 226 |[31m     [90m/* tl.revert() (not kill()): React StrictMode mounts effects twice, and a[31m
+ [90m 227 |[31m [90m       plain kill() would leave the .from() start states (opacity 0) applied —[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/qwere/OneDrive/ドキュメント/robotron-2026/src/components/Hero/Hero.jsx[39m:224:84
+[33m  226|      /* tl.revert() (not kill()): React StrictMode mounts effects twice, and a
+  227|         plain kill() would leave the .from() start states (opacity 0) applied —
+  228|         the second mount would then animate 0→0 and the scene would never show. */
+     |                                                            ^
+  229|      return () => tl.revert();
+  230|    }, [reduced]);[39m
+      at constructor (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:369:19)
+      at JSXParserMixin.raise (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:6620:19)
+      at JSXParserMixin.unexpected (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:6640:16)
+      at JSXParserMixin.expect (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:6920:12)
+      at JSXParserMixin.parseCallExpressionArguments (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11269:14)
+      at JSXParserMixin.parseCoverCallAndAsyncArrowHead (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11212:29)
+      at JSXParserMixin.parseSubscript (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11141:19)
+      at JSXParserMixin.parseSubscripts (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11115:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11106:17)
+      at JSXParserMixin.parseUpdate (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11087:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11067:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:10920:61)
+      at JSXParserMixin.parseExprOps (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:10925:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:10902:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:10852:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:10805:23)
+      at C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:10801:39
+      at JSXParserMixin.allowInAnd (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:12450:16)
+      at JSXParserMixin.parseExpression (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:10801:17)
+      at JSXParserMixin.parseStatementContent (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:12924:23)
+      at JSXParserMixin.parseStatementLike (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:12796:17)
+      at JSXParserMixin.parseStatementListItem (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:12776:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:13345:61)
+      at JSXParserMixin.parseBlockBody (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:13338:10)
+      at JSXParserMixin.parseBlock (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:13326:10)
+      at JSXParserMixin.parseFunctionBody (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:12129:24)
+      at JSXParserMixin.parseArrowExpression (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:12104:10)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11713:12)
+      at JSXParserMixin.parseExprAtom (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11357:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:4780:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11102:23)
+      at JSXParserMixin.parseUpdate (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11087:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11067:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:10920:61)
+      at JSXParserMixin.parseExprOps (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:10925:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:10902:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:10852:21)
+      at C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:10821:39
+      at JSXParserMixin.allowInAnd (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:12455:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:10821:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:12522:17)
+      at JSXParserMixin.parseExprListItem (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:12204:18)
+      at JSXParserMixin.parseCallExpressionArguments (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11278:22)
+      at JSXParserMixin.parseCoverCallAndAsyncArrowHead (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11212:29)
+      at JSXParserMixin.parseSubscript (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11141:19)
+      at JSXParserMixin.parseSubscripts (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11115:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11106:17)
+      at JSXParserMixin.parseUpdate (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11087:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11067:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:10920:61)
+[2m4:31:08 AM[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\src\components\Hero\Hero.jsx: Unexpected token, expected "," (224:84)
+
+[0m [90m 222 |[31m [90m         remount), GSAP records the transitioning value (~0) as the END state[31m
+ [90m 223 |[31m [90m         and the element never becomes visible. Explicit from→to is immune. */[31m
+[31m[1m>[22m[31m[90m 224 |[31m       [33m.[31mfromTo([32m'.scroll-ind'[31m[33m,[31m { opacity[33m:[31m [35m0[31m }[33m,[31m { opacity[33m:[31m [35m1[31m[33m,[31m duration[33m:[31m [35m0.6[31m }[33m,[31m [32m'-=0.4'[31m)[33m;[31m
+ [90m     |[31m                                                                                     [31m[1m^[22m[31m
+ [90m 225 |[31m
+ [90m 226 |[31m     [90m/* tl.revert() (not kill()): React StrictMode mounts effects twice, and a[31m
+ [90m 227 |[31m [90m       plain kill() would leave the .from() start states (opacity 0) applied —[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/qwere/OneDrive/ドキュメント/robotron-2026/src/components/Hero/Hero.jsx[39m:224:84
+[33m  226|      /* tl.revert() (not kill()): React StrictMode mounts effects twice, and a
+  227|         plain kill() would leave the .from() start states (opacity 0) applied —
+  228|         the second mount would then animate 0→0 and the scene would never show. */
+     |                                                            ^
+  229|      return () => tl.revert();
+  230|    }, [reduced]);[39m
+      at constructor (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:369:19)
+      at JSXParserMixin.raise (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:6620:19)
+      at JSXParserMixin.unexpected (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:6640:16)
+      at JSXParserMixin.expect (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:6920:12)
+      at JSXParserMixin.parseCallExpressionArguments (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11269:14)
+      at JSXParserMixin.parseCoverCallAndAsyncArrowHead (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11212:29)
+      at JSXParserMixin.parseSubscript (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11141:19)
+      at JSXParserMixin.parseSubscripts (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11115:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11106:17)
+      at JSXParserMixin.parseUpdate (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11087:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11067:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:10920:61)
+      at JSXParserMixin.parseExprOps (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:10925:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:10902:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:10852:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:10805:23)
+      at C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:10801:39
+      at JSXParserMixin.allowInAnd (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:12450:16)
+      at JSXParserMixin.parseExpression (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:10801:17)
+      at JSXParserMixin.parseStatementContent (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:12924:23)
+      at JSXParserMixin.parseStatementLike (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:12796:17)
+      at JSXParserMixin.parseStatementListItem (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:12776:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:13345:61)
+      at JSXParserMixin.parseBlockBody (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:13338:10)
+      at JSXParserMixin.parseBlock (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:13326:10)
+      at JSXParserMixin.parseFunctionBody (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:12129:24)
+      at JSXParserMixin.parseArrowExpression (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:12104:10)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11713:12)
+      at JSXParserMixin.parseExprAtom (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11357:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:4780:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11102:23)
+      at JSXParserMixin.parseUpdate (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11087:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11067:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:10920:61)
+      at JSXParserMixin.parseExprOps (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:10925:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:10902:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:10852:21)
+      at C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:10821:39
+      at JSXParserMixin.allowInAnd (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:12455:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:10821:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:12522:17)
+      at JSXParserMixin.parseExprListItem (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:12204:18)
+      at JSXParserMixin.parseCallExpressionArguments (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11278:22)
+      at JSXParserMixin.parseCoverCallAndAsyncArrowHead (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11212:29)
+      at JSXParserMixin.parseSubscript (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11141:19)
+      at JSXParserMixin.parseSubscripts (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11115:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11106:17)
+      at JSXParserMixin.parseUpdate (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11087:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:11067:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\qwere\OneDrive\ドキュメント\robotron-2026\node_modules\@babel\parser\lib\index.js:10920:61)
