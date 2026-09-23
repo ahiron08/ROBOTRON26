@@ -563,22 +563,155 @@
      scene stays smooth. */
   .scene-float { animation: none; }
 
-  /* The lockup is the hero's centrepiece on phones too, so it stays
-     prominent — but the gaps tighten and the supporting line wraps so the
-     column still fits comfortably inside one screen. */
+  /* ============================================================
+     MOBILE LOCKUP — tighter but still readable
+     The existing --title-fit system already shrinks ROBOTRON with the
+     viewport width, so the wordmark keeps filling the available width.
+     We tighten the supporting type, gaps and rules here so the complete
+     lockup fits one screen without crowding.
+     ============================================================ */
+  .hero-title { gap: clamp(4px, 1.2vw, 12px); }
+  .hero-title-main {
+    /* Keep the width-aware --title-fit as the primary sizing driver.
+       Loosen the vh guard from 24vh to 28vh so tall phones can use their
+       extra vertical room, while the width-driven fit keeps ROBOTRON from
+       overflowing horizontally. */
+    font-size: clamp(2.2rem, min(var(--title-fit, 20vw), 28vh), 8rem);
+  }
+  .hero-year {
+    /* Scale 2026 proportionally to ROBOTRON via the same vh guard so the
+       lockup proportions hold on every screen. 10vw alone would render the
+       year too small on wide-but-short phones and too large on narrow-tall
+       ones; the min() with vh keeps it in frame. */
+    font-size: clamp(1.4rem, min(10vw, 18vh), 4rem);
+  }
+  .hero-coming-soon {
+    /* COMING SOON must stay visible and centered at every width. Reduce
+       letter-spacing slightly and keep text-indent in sync so the trailing
+       space does not push the line off-centre or overflow. */
+    font-size: clamp(0.75rem, min(5vw, 10vh), 2.4rem);
+    letter-spacing: 0.22em;
+    text-indent: 0.22em;
+  }
+  .hero-rule { width: clamp(80px, 50vw, 220px); }
+  .hero-title-sub {
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(6px, 1vw, 12px);
+    text-align: center;
+    margin-top: clamp(6px, 0.8vw, 14px);
+  }
+  .hero-subtitle {
+    text-align: center;
+    font-size: clamp(0.85rem, 2.4vw, 1.2rem);
+    line-height: 1.5;
+    max-width: 100%;
+  }
+  .hero-meta {
+    font-size: 0.62rem;
+    letter-spacing: 0.18em;
+    padding: 6px 12px;
+    gap: 8px;
+    margin-top: clamp(8px, 1vw, 16px);
+  }
+  .kicker-line {
+    font-size: clamp(0.5rem, 1.6vw, 0.7rem);
+    letter-spacing: 0.4em;
+    text-indent: 0.4em;
+    padding: 2px 0 4px;
+    margin-top: clamp(2px, 0.6vw, 8px);
+  }
+}
+
+/* ============================================================
+   Narrow-phone refinements — phones 480px and below
+   On very narrow viewports the title-fit system already constrains
+   ROBOTRON to the available width, but the supporting type and gutters
+   need a little extra care so nothing crowds the edges.
+   ============================================================ */
+@media (max-width: 480px) {
+  .hero-title { gap: clamp(3px, 1vw, 8px); }
+  .hero-title-main {
+    /* On phones narrower than 480px the width-driven fit is the dominant
+       constraint; nudge the vh ceiling down slightly so short phones keep
+       the lockup on screen without the width shrinking too much. */
+    font-size: clamp(2rem, min(var(--title-fit, 18vw), 26vh), 7rem);
+  }
+  .hero-year {
+    font-size: clamp(1.2rem, min(9vw, 16vh), 3.2rem);
+  }
+  .hero-coming-soon {
+    font-size: clamp(0.7rem, min(4.5vw, 9vh), 2rem);
+    letter-spacing: 0.18em;
+    text-indent: 0.18em;
+  }
+  .hero-rule { width: clamp(60px, 44vw, 160px); }
+  .hero-title-sub { gap: clamp(4px, 0.8vw, 8px); margin-top: clamp(4px, 0.6vw, 10px); }
+  .hero-subtitle {
+    font-size: clamp(0.8rem, 2.2vw, 1rem);
+    line-height: 1.45;
+  }
+  .hero-meta {
+    font-size: 0.58rem;
+    letter-spacing: 0.16em;
+    padding: 5px 10px;
+    gap: 6px;
+    margin-top: clamp(6px, 0.8vw, 12px);
+  }
+  .kicker-line {
+    font-size: clamp(0.45rem, 1.4vw, 0.6rem);
+    letter-spacing: 0.35em;
+    text-indent: 0.35em;
+    padding: 2px 0 3px;
+    margin-top: clamp(2px, 0.5vw, 6px);
+  }
+}
+
+/* ============================================================
+   Very narrow-phone safety — 360px and below
+   At these widths the --title-fit system is doing the heavy lifting for
+   ROBOTRON, but we need to ensure the supporting lines, rules and meta
+   never overflow horizontally and the complete lockup stays vertically
+   centred with comfortable gutters.
+   ============================================================ */
+@media (max-width: 360px) {
   .hero-title { gap: 2px; }
-   /* Mobile: `--title-fit` already shrinks with the viewport, so the
-      wordmark keeps filling the width edge-to-edge. The old hardcoded
-      24vw ignored the word's own advance width and rendered `ROBOTRON`
-      at 1.4x the screen (measured), which clipped the R and the N. Only
-      the height guard is loosened here — a phone is tall enough that
-   24vh would waste the extra room the narrow column has. */
-   .hero-title-main { font-size: clamp(2.2rem, min(var(--title-fit, 20vw), 24vh), 8rem); }
-   .hero-year { font-size: clamp(1.4rem, 10vw, 4rem); }
-   .hero-coming-soon { font-size: clamp(0.7rem, 5.5vw, 2.4rem); letter-spacing: 0.28em; text-indent: 0.28em; }
-  .hero-rule { width: 62vw; }
-  .hero-title-sub { flex-direction: column; gap: 8px; text-align: center; }
-  .hero-subtitle { text-align: center; }
+  .hero-title-main {
+    /* The width-aware fit keeps ROBOTRON inside the gutters; the vh guard
+       is loosened to 24vh here because very narrow screens are rarely short
+       enough to need a tighter ceiling, and we do not want the wordmark to
+       collapse unnecessarily on a 360x740 phone. */
+    font-size: clamp(1.8rem, min(var(--title-fit, 16vw), 24vh), 6rem);
+  }
+  .hero-year {
+    font-size: clamp(1rem, min(8vw, 14vh), 2.6rem);
+  }
+  .hero-coming-soon {
+    font-size: clamp(0.65rem, min(4vw, 8vh), 1.6rem);
+    letter-spacing: 0.14em;
+    text-indent: 0.14em;
+  }
+  .hero-rule { width: clamp(44px, 38vw, 120px); }
+  .hero-title-sub { gap: 3px; margin-top: clamp(3px, 0.5vw, 8px); }
+  .hero-subtitle {
+    font-size: clamp(0.75rem, 2vw, 0.9rem);
+    line-height: 1.4;
+    max-width: 100%;
+  }
+  .hero-meta {
+    font-size: 0.52rem;
+    letter-spacing: 0.14em;
+    padding: 4px 8px;
+    gap: 5px;
+    margin-top: clamp(5px, 0.7vw, 10px);
+  }
+  .kicker-line {
+    font-size: clamp(0.4rem, 1.2vw, 0.52rem);
+    letter-spacing: 0.3em;
+    text-indent: 0.3em;
+    padding: 1px 0 2px;
+    margin-top: clamp(1px, 0.4vw, 5px);
+  }
 }
 
 /* ============================================================
